@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B5A8DC4243BE56B0082F2DC /* Perfil_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5A8DC3243BE56B0082F2DC /* Perfil_ViewController.swift */; };
 		3086A5852437B27100CBE609 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3086A5842437B27100CBE609 /* AppDelegate.swift */; };
 		3086A5872437B27100CBE609 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3086A5862437B27100CBE609 /* SceneDelegate.swift */; };
 		3086A5892437B27100CBE609 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3086A5882437B27100CBE609 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B5A8DC3243BE56B0082F2DC /* Perfil_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfil_ViewController.swift; sourceTree = "<group>"; };
 		3086A5812437B27100CBE609 /* Idosos_Descolados_XCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Idosos_Descolados_XCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3086A5842437B27100CBE609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3086A5862437B27100CBE609 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B5A8DC6243CC9DB0082F2DC /* View  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View ";
+			sourceTree = "<group>";
+		};
 		3086A5782437B27100CBE609 = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +67,13 @@
 			children = (
 				3086A5842437B27100CBE609 /* AppDelegate.swift */,
 				3086A5862437B27100CBE609 /* SceneDelegate.swift */,
-				3086A5882437B27100CBE609 /* ViewController.swift */,
 				3086A58A2437B27100CBE609 /* Main.storyboard */,
 				3086A58D2437B27500CBE609 /* Assets.xcassets */,
 				3086A58F2437B27500CBE609 /* LaunchScreen.storyboard */,
 				3086A5922437B27500CBE609 /* Info.plist */,
+				2B5A8DC6243CC9DB0082F2DC /* View  */,
+				2B5A8DC3243BE56B0082F2DC /* Perfil_ViewController.swift */,
+				3086A5882437B27100CBE609 /* ViewController.swift */,
 			);
 			path = Idosos_Descolados_XCode;
 			sourceTree = "<group>";
@@ -140,6 +151,7 @@
 			files = (
 				3086A5892437B27100CBE609 /* ViewController.swift in Sources */,
 				3086A5852437B27100CBE609 /* AppDelegate.swift in Sources */,
+				2B5A8DC4243BE56B0082F2DC /* Perfil_ViewController.swift in Sources */,
 				3086A5872437B27100CBE609 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
