@@ -1,7 +1,146 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qBd-Ct-Z9T">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Perfil-->
+        <scene sceneID="RUc-oK-WMY">
+            <objects>
+                <viewController id="qBd-Ct-Z9T" customClass="Perfil_ViewController" customModule="Idosos_Descolados_XCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QvF-BC-8wY" customClass="Perfil">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OvA-lP-ihq">
+                                <rect key="frame" x="45" y="109" width="128" height="125"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q9N-TM-jV1">
+                                <rect key="frame" x="190" y="180" width="150" height="34"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Adress" borderStyle="roundedRect" placeholder="Adress" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oWP-zW-hSP">
+                                <rect key="frame" x="45" y="282" width="295" height="34"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Profession" borderStyle="roundedRect" placeholder="Profession" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wZb-hS-9LS">
+                                <rect key="frame" x="45" y="366" width="295" height="34"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Write your interests" borderStyle="roundedRect" placeholder="Write your interest" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zob-FI-HCF">
+                                <rect key="frame" x="45" y="450" width="295" height="34"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="How many times a week do you exercise?" borderStyle="roundedRect" placeholder="How many times a week do you exercise?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O65-2U-uNb">
+                                <rect key="frame" x="45" y="534" width="295" height="34"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="In4-uP-e9z">
+                                <rect key="frame" x="190" y="109" width="150" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="ryT-Vp-o2Z"/>
+                                    <constraint firstAttribute="height" constant="34" id="sWt-W4-sE4"/>
+                                </constraints>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Things you did with us!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nkv-bx-qGn">
+                                <rect key="frame" x="119.5" y="667" width="186.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save changes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3f-Na-69H">
+                                <rect key="frame" x="153.5" y="757.5" width="107" height="21"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wZb-hS-9LS" firstAttribute="leading" secondItem="MAB-e8-WT3" secondAttribute="leading" constant="45" id="0ob-vd-MTY"/>
+                            <constraint firstItem="zob-FI-HCF" firstAttribute="leading" secondItem="MAB-e8-WT3" secondAttribute="leading" constant="45" id="2M6-yz-wmB"/>
+                            <constraint firstItem="oWP-zW-hSP" firstAttribute="leading" secondItem="wZb-hS-9LS" secondAttribute="leading" id="5bk-6C-jvd"/>
+                            <constraint firstItem="oWP-zW-hSP" firstAttribute="top" secondItem="OvA-lP-ihq" secondAttribute="bottom" constant="48" id="8Ts-hR-Ynb"/>
+                            <constraint firstItem="MAB-e8-WT3" firstAttribute="trailing" secondItem="Nkv-bx-qGn" secondAttribute="trailing" constant="108" id="8tB-a0-6es"/>
+                            <constraint firstItem="oWP-zW-hSP" firstAttribute="leading" secondItem="OvA-lP-ihq" secondAttribute="leading" id="AOv-KC-rco"/>
+                            <constraint firstItem="In4-uP-e9z" firstAttribute="leading" secondItem="OvA-lP-ihq" secondAttribute="trailing" constant="17" id="CYT-eP-nlJ"/>
+                            <constraint firstItem="MAB-e8-WT3" firstAttribute="trailing" secondItem="oWP-zW-hSP" secondAttribute="trailing" constant="74" id="DNu-H1-bHl"/>
+                            <constraint firstItem="oWP-zW-hSP" firstAttribute="trailing" secondItem="zob-FI-HCF" secondAttribute="trailing" id="EPT-FR-QaS"/>
+                            <constraint firstItem="oWP-zW-hSP" firstAttribute="leading" secondItem="MAB-e8-WT3" secondAttribute="leading" constant="45" id="JLI-D0-ZfW"/>
+                            <constraint firstItem="Q9N-TM-jV1" firstAttribute="top" secondItem="In4-uP-e9z" secondAttribute="bottom" constant="37" id="KIA-BW-wDZ"/>
+                            <constraint firstItem="MAB-e8-WT3" firstAttribute="bottom" secondItem="t3f-Na-69H" secondAttribute="bottom" constant="83.5" id="L7L-yJ-LRe"/>
+                            <constraint firstItem="t3f-Na-69H" firstAttribute="centerX" secondItem="QvF-BC-8wY" secondAttribute="centerX" id="Y4X-1J-Gov"/>
+                            <constraint firstItem="In4-uP-e9z" firstAttribute="height" secondItem="Q9N-TM-jV1" secondAttribute="height" id="YGK-Qk-yu7"/>
+                            <constraint firstItem="oWP-zW-hSP" firstAttribute="leading" secondItem="O65-2U-uNb" secondAttribute="leading" id="aOv-x5-Dyq"/>
+                            <constraint firstItem="oWP-zW-hSP" firstAttribute="top" secondItem="QvF-BC-8wY" secondAttribute="top" constant="282" id="aki-rf-sB2"/>
+                            <constraint firstItem="OvA-lP-ihq" firstAttribute="top" secondItem="MAB-e8-WT3" secondAttribute="top" constant="65" id="amI-75-kcA"/>
+                            <constraint firstItem="zob-FI-HCF" firstAttribute="top" secondItem="wZb-hS-9LS" secondAttribute="bottom" constant="50" id="flv-l9-ZRY"/>
+                            <constraint firstItem="Q9N-TM-jV1" firstAttribute="leading" secondItem="OvA-lP-ihq" secondAttribute="trailing" constant="17" id="hqe-fW-QCL"/>
+                            <constraint firstItem="O65-2U-uNb" firstAttribute="top" secondItem="zob-FI-HCF" secondAttribute="bottom" constant="50" id="joV-U3-toZ"/>
+                            <constraint firstItem="O65-2U-uNb" firstAttribute="leading" secondItem="MAB-e8-WT3" secondAttribute="leading" constant="45" id="pMk-Y8-AVc"/>
+                            <constraint firstItem="t3f-Na-69H" firstAttribute="top" secondItem="Nkv-bx-qGn" secondAttribute="bottom" constant="70" id="qwP-N3-cFV"/>
+                            <constraint firstItem="OvA-lP-ihq" firstAttribute="leading" secondItem="MAB-e8-WT3" secondAttribute="leading" constant="45" id="r3G-cr-3tX"/>
+                            <constraint firstItem="wZb-hS-9LS" firstAttribute="top" secondItem="oWP-zW-hSP" secondAttribute="bottom" constant="50" id="rEW-pK-m1H"/>
+                            <constraint firstItem="oWP-zW-hSP" firstAttribute="trailing" secondItem="Q9N-TM-jV1" secondAttribute="trailing" id="rhf-Ra-45L"/>
+                            <constraint firstItem="oWP-zW-hSP" firstAttribute="centerX" secondItem="wZb-hS-9LS" secondAttribute="centerX" id="roz-mv-E20"/>
+                            <constraint firstItem="Nkv-bx-qGn" firstAttribute="top" secondItem="O65-2U-uNb" secondAttribute="bottom" constant="50" id="tOp-7y-Q9n"/>
+                            <constraint firstItem="oWP-zW-hSP" firstAttribute="trailing" secondItem="O65-2U-uNb" secondAttribute="trailing" id="uqa-DW-xc2"/>
+                            <constraint firstItem="In4-uP-e9z" firstAttribute="width" secondItem="Q9N-TM-jV1" secondAttribute="width" id="vnR-1d-PCH"/>
+                            <constraint firstItem="oWP-zW-hSP" firstAttribute="leading" secondItem="zob-FI-HCF" secondAttribute="leading" id="wEB-cY-lQL"/>
+                            <constraint firstItem="Nkv-bx-qGn" firstAttribute="leading" secondItem="MAB-e8-WT3" secondAttribute="leading" constant="119.5" id="weU-je-8pA"/>
+                            <constraint firstItem="In4-uP-e9z" firstAttribute="top" secondItem="MAB-e8-WT3" secondAttribute="top" constant="65" id="zFI-Zt-i8J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MAB-e8-WT3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Perfil" id="8ks-FL-YLp"/>
+                    <connections>
+                        <outlet property="adress" destination="oWP-zW-hSP" id="8GY-jl-ddQ"/>
+                        <outlet property="age" destination="Q9N-TM-jV1" id="4Wh-Cp-0rk"/>
+                        <outlet property="history" destination="Nkv-bx-qGn" id="qpD-0k-ktm"/>
+                        <outlet property="myinterest" destination="zob-FI-HCF" id="psQ-rB-yho"/>
+                        <outlet property="name" destination="In4-uP-e9z" id="3Fq-d3-tRx"/>
+                        <outlet property="profession" destination="wZb-hS-9LS" id="G2K-dm-Q3y"/>
+                        <outlet property="regularyExercise" destination="O65-2U-uNb" id="xig-cd-ZBe"/>
+                        <outlet property="saveChanges" destination="t3f-Na-69H" id="AGc-V9-6Pn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SMB-3Q-r5Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1085.5072463768117" y="207.58928571428569"/>
+        </scene>
+        <!--Perfil View Controller-->
+        <scene sceneID="E1e-7P-wNW">
+            <objects>
+                <viewController id="wfe-SK-DJk" customClass="Perfil_ViewController" customModule="Idosos_Descolados_XCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X0K-yc-RHb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="e6F-io-qYH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KAJ-sN-ywn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1952" y="208"/>
+        </scene>
+    </scenes>
 </document>
