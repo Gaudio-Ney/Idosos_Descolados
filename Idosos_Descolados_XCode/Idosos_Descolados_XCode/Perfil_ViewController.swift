@@ -21,7 +21,6 @@ class Perfil_ViewController: UIViewController {
     @IBOutlet weak var myinterest: UITextField!
     
     @IBOutlet weak var regularyExercise: UITextField!
-
     
     @IBOutlet weak var history: UILabel!
     
@@ -31,26 +30,31 @@ class Perfil_ViewController: UIViewController {
     
     
     
-    
-    
-    
-    
-    
+
     override func viewDidLoad() {
-        
-        name.text
-        
-        
         
         super.viewDidLoad()
 
         // Do any additional setup after
         //loading the view.
-        
-        
+    
     }
     
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+    }
     /*
     // MARK: - Navigation
 
@@ -61,4 +65,4 @@ class Perfil_ViewController: UIViewController {
     }
     */
 
-}
+

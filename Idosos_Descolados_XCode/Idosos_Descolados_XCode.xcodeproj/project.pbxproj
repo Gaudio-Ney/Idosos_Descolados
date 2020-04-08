@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B5A8DC4243BE56B0082F2DC /* Perfil_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5A8DC3243BE56B0082F2DC /* Perfil_ViewController.swift */; };
+		2B940DE4243E44CA00F7A3D0 /* CriaAtividade_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B940DE3243E44CA00F7A3D0 /* CriaAtividade_ViewController.swift */; };
 		3086A5852437B27100CBE609 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3086A5842437B27100CBE609 /* AppDelegate.swift */; };
 		3086A5872437B27100CBE609 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3086A5862437B27100CBE609 /* SceneDelegate.swift */; };
 		3086A5892437B27100CBE609 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3086A5882437B27100CBE609 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		2B5A8DC3243BE56B0082F2DC /* Perfil_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfil_ViewController.swift; sourceTree = "<group>"; };
+		2B940DE3243E44CA00F7A3D0 /* CriaAtividade_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriaAtividade_ViewController.swift; sourceTree = "<group>"; };
 		3086A5812437B27100CBE609 /* Idosos_Descolados_XCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Idosos_Descolados_XCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3086A5842437B27100CBE609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3086A5862437B27100CBE609 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				2B5A8DC6243CC9DB0082F2DC /* View  */,
 				2B5A8DC3243BE56B0082F2DC /* Perfil_ViewController.swift */,
 				3086A5882437B27100CBE609 /* ViewController.swift */,
+				2B940DE3243E44CA00F7A3D0 /* CriaAtividade_ViewController.swift */,
 			);
 			path = Idosos_Descolados_XCode;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B940DE4243E44CA00F7A3D0 /* CriaAtividade_ViewController.swift in Sources */,
 				3086A5892437B27100CBE609 /* ViewController.swift in Sources */,
 				3086A5852437B27100CBE609 /* AppDelegate.swift in Sources */,
 				2B5A8DC4243BE56B0082F2DC /* Perfil_ViewController.swift in Sources */,
