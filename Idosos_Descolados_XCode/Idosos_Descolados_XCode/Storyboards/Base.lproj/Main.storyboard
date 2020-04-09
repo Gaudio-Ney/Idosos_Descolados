@@ -20,7 +20,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Criar atividade"/>
                                 <connections>
-                                    <segue destination="TgV-1Z-9uf" kind="show" id="cwF-9W-ett"/>
+                                    <segue destination="TgV-1Z-9uf" kind="show" id="wmC-KR-uZG"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EeD-hG-x7j">
@@ -35,6 +35,14 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53n-V1-qDA">
+                                <rect key="frame" x="150" y="169" width="114" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Buscar atividade"/>
+                                <connections>
+                                    <segue destination="RWs-fz-k7R" kind="show" id="R6w-o9-Xic"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -44,6 +52,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1202.8985507246377" y="1366.7410714285713"/>
+        </scene>
+        <!--FeedDeBusca-->
+        <scene sceneID="UDa-Hg-f08">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="TablewView_ViewController" storyboardName="FeedDeBusca" id="RWs-fz-k7R" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="s1L-23-wxo"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XZN-45-eoH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1892" y="1154"/>
         </scene>
         <!--CriaAtividade_ViewController-->
         <scene sceneID="M77-ba-nUh">

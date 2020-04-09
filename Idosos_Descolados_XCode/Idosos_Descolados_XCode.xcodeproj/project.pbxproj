@@ -20,6 +20,8 @@
 		30B06BA6243E63DB002DC8D2 /* TableViewCellFeedBusca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B06BA5243E63DB002DC8D2 /* TableViewCellFeedBusca.swift */; };
 		30CC5529243E8FBD0097BFDF /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30CC5528243E8FBD0097BFDF /* Chat.storyboard */; };
 		30CC552B243F93270097BFDF /* CriaAtividade_ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30CC552A243F93270097BFDF /* CriaAtividade_ViewController.storyboard */; };
+		30CC552D243F98220097BFDF /* DetalheAtividade_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CC552C243F98220097BFDF /* DetalheAtividade_ViewController.swift */; };
+		30CC552F243F9E8D0097BFDF /* TablewView_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CC552E243F9E8D0097BFDF /* TablewView_ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		30B06BA5243E63DB002DC8D2 /* TableViewCellFeedBusca.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellFeedBusca.swift; sourceTree = "<group>"; };
 		30CC5528243E8FBD0097BFDF /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		30CC552A243F93270097BFDF /* CriaAtividade_ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CriaAtividade_ViewController.storyboard; sourceTree = "<group>"; };
+		30CC552C243F98220097BFDF /* DetalheAtividade_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheAtividade_ViewController.swift; sourceTree = "<group>"; };
+		30CC552E243F9E8D0097BFDF /* TablewView_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablewView_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				2B940DE3243E44CA00F7A3D0 /* CriaAtividade_ViewController.swift */,
 				3086A5882437B27100CBE609 /* ViewController.swift */,
+				30CC552E243F9E8D0097BFDF /* TablewView_ViewController.swift */,
+				30CC552C243F98220097BFDF /* DetalheAtividade_ViewController.swift */,
 				30B06BA5243E63DB002DC8D2 /* TableViewCellFeedBusca.swift */,
 				2B5A8DC3243BE56B0082F2DC /* Perfil_ViewController.swift */,
 			);
@@ -181,10 +187,12 @@
 			files = (
 				2B940DE4243E44CA00F7A3D0 /* CriaAtividade_ViewController.swift in Sources */,
 				3086A5892437B27100CBE609 /* ViewController.swift in Sources */,
+				30CC552F243F9E8D0097BFDF /* TablewView_ViewController.swift in Sources */,
 				30B06BA6243E63DB002DC8D2 /* TableViewCellFeedBusca.swift in Sources */,
 				3086A5852437B27100CBE609 /* AppDelegate.swift in Sources */,
 				2B5A8DC4243BE56B0082F2DC /* Perfil_ViewController.swift in Sources */,
 				3086A5872437B27100CBE609 /* SceneDelegate.swift in Sources */,
+				30CC552D243F98220097BFDF /* DetalheAtividade_ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

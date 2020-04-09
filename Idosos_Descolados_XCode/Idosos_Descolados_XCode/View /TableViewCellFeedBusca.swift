@@ -10,15 +10,23 @@ import UIKit
 
 class TableViewCellFeedBusca: UITableViewCell {
     
+    
+    
     @IBOutlet var ImagemAtividadeCell: UIImageView!
     @IBOutlet var NomeAtividadeLabelCell: UILabel!
     
     @IBOutlet var ModalidadeAtividadeLabelCell: UILabel!
     @IBOutlet var LocalAtividadeLabelCell: UILabel!
     @IBOutlet var HoraAtividadeLabelCell: UILabel!
+    @IBOutlet var LabelNome: UILabel!
+    
+    @IBOutlet var LabelModalidade: UILabel!
+    
+    @IBOutlet var LabelLocal: UILabel!
+    
+    @IBOutlet var LabelHora: UILabel!
     
     
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -26,8 +34,6 @@ class TableViewCellFeedBusca: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }
