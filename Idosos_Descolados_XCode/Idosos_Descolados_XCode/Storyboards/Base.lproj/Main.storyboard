@@ -38,6 +38,10 @@
                                     <segue destination="RWs-fz-k7R" kind="show" id="R6w-o9-Xic"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="9YS-VP-1a9">
+                                <rect key="frame" x="87" y="193" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -108,4 +112,7 @@
             <point key="canvasLocation" x="946" y="887"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1" width="1200" height="787"/>
+    </resources>
 </document>
