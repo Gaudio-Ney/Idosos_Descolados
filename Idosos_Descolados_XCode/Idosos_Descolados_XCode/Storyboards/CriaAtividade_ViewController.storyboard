@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mb9-j6-Rz4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mb9-j6-Rz4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -60,19 +60,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Awv-cX-Scx">
-                                <rect key="frame" x="0.0" y="420" width="414" height="216"/>
-                            </pickerView>
-                            <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GCn-2O-5xa">
-                                <rect key="frame" x="0.0" y="676" width="414" height="162"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="380" id="EoI-k1-hHo"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="dataSource" destination="mb9-j6-Rz4" id="BK8-bu-8Vl"/>
-                                    <outlet property="delegate" destination="mb9-j6-Rz4" id="dKk-p7-7nd"/>
-                                </connections>
-                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -80,7 +67,6 @@
                             <constraint firstItem="gUR-Qr-rBO" firstAttribute="leading" secondItem="eJ3-71-M3c" secondAttribute="leading" id="82W-SK-hCh"/>
                             <constraint firstItem="Yvc-Zf-2J3" firstAttribute="leading" secondItem="VqC-CP-oVG" secondAttribute="leading" id="8YD-MR-fWS"/>
                             <constraint firstItem="VqC-CP-oVG" firstAttribute="top" secondItem="Yvc-Zf-2J3" secondAttribute="bottom" constant="50" id="ANC-bB-pdq"/>
-                            <constraint firstItem="Awv-cX-Scx" firstAttribute="top" secondItem="gUR-Qr-rBO" secondAttribute="bottom" constant="10" id="Dtf-4R-l0a"/>
                             <constraint firstItem="gUR-Qr-rBO" firstAttribute="top" secondItem="eJ3-71-M3c" secondAttribute="bottom" constant="30" id="I7S-OW-tW2"/>
                             <constraint firstItem="Yvc-Zf-2J3" firstAttribute="leading" secondItem="bDw-Mh-jta" secondAttribute="leading" constant="32.5" id="Mvd-1J-vaW"/>
                             <constraint firstItem="Yvc-Zf-2J3" firstAttribute="leading" secondItem="eJ3-71-M3c" secondAttribute="leading" id="Pjn-fm-mU9"/>
@@ -95,8 +81,6 @@
                     <navigationItem key="navigationItem" id="6NW-sE-nDg"/>
                     <connections>
                         <outlet property="category" destination="ASC-HA-XYS" id="Dwe-Ha-pKU"/>
-                        <outlet property="chooseCategory" destination="GCn-2O-5xa" id="UQ2-Cq-jwC"/>
-                        <outlet property="chooseTime" destination="Awv-cX-Scx" id="sZU-fi-Ome"/>
                         <outlet property="createActivity" destination="yxB-kN-z82" id="V4G-0H-GeU"/>
                         <outlet property="descriptionActivity" destination="VqC-CP-oVG" id="6AE-ly-pkQ"/>
                         <outlet property="location" destination="eJ3-71-M3c" id="nCF-iw-eAz"/>
