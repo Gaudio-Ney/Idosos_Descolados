@@ -7,85 +7,42 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Cria Atividade View Controller-->
+        <!--Criar Atividade View Controller-->
         <scene sceneID="5bn-r5-2dz">
             <objects>
-                <viewController id="mb9-j6-Rz4" customClass="CriaAtividade_ViewController" customModule="Idosos_Descolados_XCode" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mb9-j6-Rz4" customClass="CriarAtividade_ViewController" customModule="Idosos_Descolados_XCode" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y9D-0v-dCs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASC-HA-XYS">
-                                <rect key="frame" x="33" y="631" width="123" height="37"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your Activity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxB-kN-z82">
-                                <rect key="frame" x="32.5" y="84" width="349" height="51"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of Activity " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yvc-Zf-2J3">
-                                <rect key="frame" x="33" y="165" width="349" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="026-ah-fl2"/>
-                                    <constraint firstAttribute="width" constant="152" id="SUa-I0-4Aj"/>
-                                </constraints>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f1V-H4-60x">
+                                <rect key="frame" x="46" y="451" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eJ3-71-M3c">
-                                <rect key="frame" x="32.5" y="305" width="152" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="152" id="WSr-Jo-6mf"/>
-                                    <constraint firstAttribute="height" constant="40" id="wYl-NW-MS8"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VqC-CP-oVG">
-                                <rect key="frame" x="33" y="235" width="349" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="152" id="UgE-I7-XJg"/>
-                                    <constraint firstAttribute="height" constant="40" id="WhW-hf-tch"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUR-Qr-rBO">
-                                <rect key="frame" x="32.5" y="375" width="67" height="37"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fsz-cC-O5T">
+                                <rect key="frame" x="56" y="537" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jq0-gI-lGt">
+                                <rect key="frame" x="56" y="611" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="yxB-kN-z82" firstAttribute="top" secondItem="bDw-Mh-jta" secondAttribute="top" constant="40" id="3yJ-1f-mBN"/>
-                            <constraint firstItem="gUR-Qr-rBO" firstAttribute="leading" secondItem="eJ3-71-M3c" secondAttribute="leading" id="82W-SK-hCh"/>
-                            <constraint firstItem="Yvc-Zf-2J3" firstAttribute="leading" secondItem="VqC-CP-oVG" secondAttribute="leading" id="8YD-MR-fWS"/>
-                            <constraint firstItem="VqC-CP-oVG" firstAttribute="top" secondItem="Yvc-Zf-2J3" secondAttribute="bottom" constant="50" id="ANC-bB-pdq"/>
-                            <constraint firstItem="gUR-Qr-rBO" firstAttribute="top" secondItem="eJ3-71-M3c" secondAttribute="bottom" constant="30" id="I7S-OW-tW2"/>
-                            <constraint firstItem="Yvc-Zf-2J3" firstAttribute="leading" secondItem="bDw-Mh-jta" secondAttribute="leading" constant="32.5" id="Mvd-1J-vaW"/>
-                            <constraint firstItem="Yvc-Zf-2J3" firstAttribute="leading" secondItem="eJ3-71-M3c" secondAttribute="leading" id="Pjn-fm-mU9"/>
-                            <constraint firstItem="Yvc-Zf-2J3" firstAttribute="top" secondItem="yxB-kN-z82" secondAttribute="bottom" constant="30" id="TD1-PY-HFt"/>
-                            <constraint firstItem="yxB-kN-z82" firstAttribute="centerX" secondItem="Y9D-0v-dCs" secondAttribute="centerX" id="Tnc-m6-zqc"/>
-                            <constraint firstItem="VqC-CP-oVG" firstAttribute="top" secondItem="Yvc-Zf-2J3" secondAttribute="bottom" constant="30" id="eYG-PW-esF"/>
-                            <constraint firstItem="eJ3-71-M3c" firstAttribute="top" secondItem="VqC-CP-oVG" secondAttribute="bottom" constant="30" id="mz4-5V-KFN"/>
-                            <constraint firstItem="ASC-HA-XYS" firstAttribute="top" secondItem="gUR-Qr-rBO" secondAttribute="bottom" constant="219" id="qfz-Me-nvd"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bDw-Mh-jta"/>
                     </view>
                     <navigationItem key="navigationItem" id="6NW-sE-nDg"/>
                     <connections>
-                        <outlet property="category" destination="ASC-HA-XYS" id="Dwe-Ha-pKU"/>
-                        <outlet property="createActivity" destination="yxB-kN-z82" id="V4G-0H-GeU"/>
-                        <outlet property="descriptionActivity" destination="VqC-CP-oVG" id="6AE-ly-pkQ"/>
-                        <outlet property="location" destination="eJ3-71-M3c" id="nCF-iw-eAz"/>
-                        <outlet property="nameActivity" destination="Yvc-Zf-2J3" id="7nC-Fo-uU1"/>
-                        <outlet property="time" destination="gUR-Qr-rBO" id="iLL-P6-mPC"/>
+                        <outlet property="duration" destination="fsz-cC-O5T" id="6Vw-nW-uye"/>
+                        <outlet property="durationstextfield" destination="jq0-gI-lGt" id="TAD-Tf-NjM"/>
+                        <outlet property="eventtextfield" destination="f1V-H4-60x" id="L3i-o4-hyP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HqT-ht-yID" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
