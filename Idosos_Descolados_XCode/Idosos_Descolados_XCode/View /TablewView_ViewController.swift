@@ -8,12 +8,15 @@
 
 import UIKit
 
-class TablewView_ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
+class TablewView_ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate
 {
 
+    @IBOutlet var BarraDeBusca: UISearchBar!
+    
     @IBOutlet var TableViewAtividade: UITableView!
     
     var atividadeArray: [AtividadesExistentes] = []
+    var atualAtividadeArray:[AtividadesExistentes] = []
     
     
     class AtividadesExistentes {
@@ -46,7 +49,9 @@ class TablewView_ViewController: UIViewController, UITableViewDataSource, UITabl
            atividadeArray.append(AtividadesExistentes(nomeAtividade:"Corrida na Orla de Copa", modalidadeAtividade: .corrida, image: "praia", local: "Av. Nossa Senhora de Copacabana, 10", hora: "15h"))
         atividadeArray.append(AtividadesExistentes(nomeAtividade: "Yoga em Copa", modalidadeAtividade: .yoga, image: "yoga", local: "Posto 4", hora: "17h" ))
         
-           for atividade in atividadeArray
+         atualAtividadeArray = atividadeArray
+        
+           for atividade in atualAtividadeArray
            {
                print (atividade.nomeAtividade)
            }
@@ -58,10 +63,11 @@ class TablewView_ViewController: UIViewController, UITableViewDataSource, UITabl
         TableViewAtividade.dataSource = self
         TableViewAtividade.delegate = self
         self.setUpAtividades()
+        self.setUpSearchBar()
     }
 
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return atividadeArray.count
+            return atualAtividadeArray.count
         }
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -69,12 +75,35 @@ class TablewView_ViewController: UIViewController, UITableViewDataSource, UITabl
             {
                 return UITableViewCell()
             }
-            print ("Atividade Array: ", atividadeArray.count)
-            cell.NomeAtividadeLabelCell.text = atividadeArray[indexPath.row].nomeAtividade
-            cell.ModalidadeAtividadeLabelCell.text = atividadeArray[indexPath.row].modalidadeAtividade.rawValue
-            cell.ImagemAtividadeCell.image = UIImage(named: atividadeArray[indexPath.row].image)
-            cell.LocalAtividadeLabelCell.text = atividadeArray[indexPath.row].local
-            cell.HoraAtividadeLabelCell.text = atividadeArray[indexPath.row].hora
+            print ("Atividade Array: ", atualAtividadeArray.count)
+            cell.NomeAtividadeLabelCell.text = atualAtividadeArray[indexPath.row].nomeAtividade
+            cell.ModalidadeAtividadeLabelCell.text = atualAtividadeArray[indexPath.row].modalidadeAtividade.rawValue
+            cell.ImagemAtividadeCell.image = UIImage(named: atualAtividadeArray[indexPath.row].image)
+            cell.LocalAtividadeLabelCell.text = atualAtividadeArray[indexPath.row].local
+            cell.HoraAtividadeLabelCell.text = atualAtividadeArray[indexPath.row].hora
+            
             return cell
         }
+    // Search Bar
+    
+    private func setUpSearchBar()
+       {
+           BarraDeBusca.delegate = self
+       }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String)
+    {
+        guard !searchText.isEmpty
+            else
+        {
+                atualAtividadeArray = atividadeArray
+                TableViewAtividade.reloadData()
+            return
+                
+        }
+        atualAtividadeArray = atividadeArray.filter({atividade -> Bool in atividade.nomeAtividade.lowercased().contains(searchText.lowercased())
+        })
+        TableViewAtividade.reloadData()
+    }
+    
 }
