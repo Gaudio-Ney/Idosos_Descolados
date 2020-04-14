@@ -121,6 +121,7 @@
                         <viewLayoutGuide key="safeArea" id="VTV-os-o4k"/>
                     </view>
                     <connections>
+                        <outlet property="BarraDeBusca" destination="4Py-By-OdH" id="IYy-gW-xes"/>
                         <outlet property="TableViewAtividade" destination="Hzq-JS-uCg" id="Cf0-Gx-L4V"/>
                     </connections>
                 </viewController>
