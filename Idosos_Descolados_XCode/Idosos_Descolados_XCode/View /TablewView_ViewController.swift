@@ -20,11 +20,16 @@ class TablewView_ViewController: UIViewController, UITableViewDataSource, UITabl
     var nomeAtividade:String
     var modalidadeAtividade:ModalidadeBoladona
     var image:String
-    init (nomeAtividade:String, modalidadeAtividade:ModalidadeBoladona, image:String)
+    var local:String
+    var hora:String
+        
+        init (nomeAtividade:String, modalidadeAtividade:ModalidadeBoladona, image:String, local: String, hora: String)
     {
         self.nomeAtividade = nomeAtividade
         self.modalidadeAtividade = modalidadeAtividade
         self.image = image
+        self.local = local
+        self.hora = hora
     }
         enum ModalidadeBoladona:String
         {
@@ -36,10 +41,10 @@ class TablewView_ViewController: UIViewController, UITableViewDataSource, UITabl
     }
     private func setUpAtividades()
        {
-           atividadeArray.append(AtividadesExistentes(nomeAtividade:"Corrida na Praça", modalidadeAtividade: .corrida, image: "SaudeNaPraca"))
-           atividadeArray.append(AtividadesExistentes(nomeAtividade:"Saude na Praça", modalidadeAtividade: .corrida, image: "SaudeNaPraca"))
-           atividadeArray.append(AtividadesExistentes(nomeAtividade:"Corrida na orla de Copa", modalidadeAtividade: .corrida, image: "SaudeNaPraca"))
-        atividadeArray.append(AtividadesExistentes(nomeAtividade: "Yoga em Copa", modalidadeAtividade: .yoga, image: "SaudeNaPraca"))
+           atividadeArray.append(AtividadesExistentes(nomeAtividade:"Corrida na Praça", modalidadeAtividade: .corrida, image: "SaudeNaPraca", local: "Posto 3, Copacabana", hora: "9h"))
+        atividadeArray.append(AtividadesExistentes(nomeAtividade:"Saude na Orla", modalidadeAtividade: .corrida, image: "saude", local: "Posto 5, Copacabana", hora: "7h"))
+           atividadeArray.append(AtividadesExistentes(nomeAtividade:"Corrida na Orla de Copa", modalidadeAtividade: .corrida, image: "praia", local: "Av. Nossa Senhora de Copacabana, 10", hora: "15h"))
+        atividadeArray.append(AtividadesExistentes(nomeAtividade: "Yoga em Copa", modalidadeAtividade: .yoga, image: "yoga", local: "Posto 4", hora: "17h" ))
         
            for atividade in atividadeArray
            {
@@ -68,8 +73,8 @@ class TablewView_ViewController: UIViewController, UITableViewDataSource, UITabl
             cell.NomeAtividadeLabelCell.text = atividadeArray[indexPath.row].nomeAtividade
             cell.ModalidadeAtividadeLabelCell.text = atividadeArray[indexPath.row].modalidadeAtividade.rawValue
             cell.ImagemAtividadeCell.image = UIImage(named: atividadeArray[indexPath.row].image)
-            cell.LocalAtividadeLabelCell.text = "Copacabana"
-            cell.HoraAtividadeLabelCell.text = "10h"
+            cell.LocalAtividadeLabelCell.text = atividadeArray[indexPath.row].local
+            cell.HoraAtividadeLabelCell.text = atividadeArray[indexPath.row].hora
             return cell
         }
 }
