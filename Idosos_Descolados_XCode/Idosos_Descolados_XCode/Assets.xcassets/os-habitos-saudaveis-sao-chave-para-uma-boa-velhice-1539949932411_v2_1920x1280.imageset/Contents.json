@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "os-habitos-saudaveis-sao-chave-para-uma-boa-velhice-1539949932411_v2_1920x1280.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
