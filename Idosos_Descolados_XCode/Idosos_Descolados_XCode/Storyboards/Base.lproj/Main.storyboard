@@ -94,22 +94,11 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="nML-VV-eOy"/>
                         <segue destination="Klk-wL-9gq" kind="relationship" relationship="viewControllers" id="uQy-KC-EOV"/>
-                        <segue destination="DJr-NN-9kd" kind="relationship" relationship="viewControllers" id="TTs-FK-AgT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FBc-Gt-5od" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138" y="887"/>
-        </scene>
-        <!--Chat-->
-        <scene sceneID="h9w-8d-bsK">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Chat" id="DJr-NN-9kd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="77K-9b-k7L"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0wc-9z-KSP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="946" y="887"/>
         </scene>
     </scenes>
     <resources>
