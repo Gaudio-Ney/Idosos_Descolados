@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class Perfil_ViewController: UIViewController {
+class Perfil_ViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var name: UITextField!
     
@@ -58,14 +58,14 @@ class Perfil_ViewController: UIViewController {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
     
-    func centerViewOnUserLocation () {
-        if let location = locationManager.location?.coordinate {
-            let region = MKCoordinateRegion.init(center: location, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
+    //func centerViewOnUserLocation () {
+        //if let location = locationManager.location?.coordinate {
+            //let region = MKCoordinateRegion.init(center: location, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
                 //map.setRegion(region, animated: true )
-        }
+        //}
         // func for Zoom in the user location
         // lat & long - how much the zoom is
-    }
+    //}
     
     
     
@@ -116,17 +116,17 @@ class Perfil_ViewController: UIViewController {
      // important the user its worried about privacy - so look out !!
     //MKCoordinateSpanMake
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
+   // override func didReceiveMemoryWarning() {
+    //    super.didReceiveMemoryWarning()
+    //}
     
+
+    
+
 }
-    
 
 
-
-
-extension Perfil_ViewController: CLLocationManagerDelegate {
+//extension Perfil_ViewController: CLLocationManagerDelegate {
     
     //func locationManager (_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         //here you can build a history of locations - but in the video we're'foccusing on the LAST location
@@ -145,6 +145,6 @@ extension Perfil_ViewController: CLLocationManagerDelegate {
         //
         //}
 
-}
+//}
 
 
